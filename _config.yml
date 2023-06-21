@@ -1,8 +1,41 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
-theme: just-the-docs
+# _includes/header_custom.html -- Content added to this file appears at the top of
+# every page’s main content between the site search and auxiliary links if they are
+# enabled. If search_enabled were set to false and aux_links were removed, the content of
+# header_custom.html would occupy the space at the top of every page.
 
-url: https://just-the-docs.github.io
-
+#aux_links:
+#  "NFT-TiX":
+#    - "//nft-tix.com/"
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
+aux_links_new_tab: false        # Aux links open in a new tab. Default is false
+#baseurl: '/d' # the subpath of your site, e.g. /blog
+color_scheme: dark
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # pages, posts, or drafts
+    values:
+      layout: "default"
+#  -
+#    scope:
+#      path: "docs" # an empty string here means all files in the project
+#      type: "pages" # pages, posts, or drafts
+#    values:
+#      layout: "default"
+description: >- # ignore newlines until next "foobar:"
+  NFT-TiX user-facing documentation
+email: "tester@nft-tix.com"
+plugins:
+  - jekyll-relative-links
+  - jekyll-remote-theme
+relative_links:
+  enabled:     true
+  collections: true
+repository: "nfttix/" # "github.com/nfttix/d/"
+search_enabled: false
+remote-theme: just-the-docs
+#theme: just-the-docs
+title: NFT-TiX
+url: "https://nfttix.github.io" # the base hostname & protocol for your site, e.g. http://example.com
