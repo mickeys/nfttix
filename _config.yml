@@ -36,8 +36,8 @@ relative_links:
 #repository: "nfttix/" # "github.com/nfttix/d/"
 repository: "mickeys/nfttix"
 search_enabled: false
-remote-theme: just-the-docs
-#theme: just-the-docs
+#remote-theme: just-the-docs
+theme: just-the-docs
 title: NFT-TiX
 #url: "https://nfttix.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 url: "https://github.com/mickeys/nfttix"
